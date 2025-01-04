@@ -224,3 +224,26 @@ ul {
     width: auto;
   }
 }
+
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #28a745; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: none; /* Initially hidden */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+}

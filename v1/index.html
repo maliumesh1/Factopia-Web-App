@@ -13,6 +13,7 @@
     />
 
     <link href="style.css" rel="stylesheet" />
+    <link rel="icon" href="public\logo.png">
     <title>Today I Learned!</title>
   </head>
   <body>
@@ -115,6 +116,30 @@
         </section>
       </main>
     </div>
+
+
+  
+    <button id="scrollToTopBtn">Top</button>
+  
+    <script>
+      // Scroll to top functionality
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  
+      // Show the button when scrolling down
+      window.onscroll = () => {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      };
+  
+      // Scroll to the top when the button is clicked
+      scrollToTopBtn.onclick = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+    </script>
+
 
     <script src="script.js"></script>
   </body>
