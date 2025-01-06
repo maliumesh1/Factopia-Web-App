@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Correct favicon path -->
+    <link rel="icon" href="v1/logo.png" type="image/png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +16,7 @@
     />
 
     <link href="style.css" rel="stylesheet" />
-    <link rel="icon" href="public\logo.png">
+
     <title>Today I Learned!</title>
   </head>
   <body>
@@ -117,14 +120,12 @@
       </main>
     </div>
 
-
-  
     <button id="scrollToTopBtn">Top</button>
-  
+
     <script>
       // Scroll to top functionality
       const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-  
+
       // Show the button when scrolling down
       window.onscroll = () => {
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -133,13 +134,12 @@
           scrollToTopBtn.style.display = "none";
         }
       };
-  
+
       // Scroll to the top when the button is clicked
       scrollToTopBtn.onclick = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
       };
     </script>
-
 
     <script src="script.js"></script>
   </body>
