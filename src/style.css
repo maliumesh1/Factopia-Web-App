@@ -4,9 +4,20 @@
   box-sizing: border-box;
 }
 
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .btn {
+  background-color: #333;
+  color: #fff;
+}
+
+
 body {
-  background-color: #292524;
-  color: #fafaf9;
+  background-color: #f8f7f7;
+  color: #111110;
   font-family: "Sono", sans-serif;
   padding: 48px 64px 0px;
 }
