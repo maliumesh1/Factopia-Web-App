@@ -123,23 +123,33 @@ function Header({ showForm, setShowForm, isDarkMode, setIsDarkMode }) {
         <img src="logo.png" height="68" width="68" alt="Today I Learned Logo" />
         <h1>{appTitle}</h1>
       </div>
-      <button
-        className="btn btn-large btn-open"
-        onClick={() => setShowForm((show) => !show)}
-      >
-        {showForm ? "Close" : "Share a fact"}
-      </button>
-      <button
-        className="btn btn-large"
-        style={{
-          marginLeft: "10px",
-          backgroundColor: isDarkMode ? "#444" : "#ddd",
-          color: isDarkMode ? "#fff" : "#000",
-        }}
-        onClick={() => setIsDarkMode((prev) => !prev)}
-      >
-        {isDarkMode ? "Light Mode" : "Dark Mode"}
-      </button>
+      <div className="header-nav">
+        <nav className="nav-links">
+          <button className="btn nav-link">About us</button>
+          <button className="btn nav-link">Events</button>
+          <button className="btn nav-link">Authors/Illustrators</button>
+          <button className="btn nav-link">Contact us</button>
+        </nav>
+        <div className="header-buttons">
+          <button
+            className="btn btn-large btn-open"
+            onClick={() => setShowForm((show) => !show)}
+          >
+            {showForm ? "Close" : "Share a fact"}
+          </button>
+          <button
+            className="btn btn-large"
+            style={{
+              marginLeft: "10px",
+              backgroundColor: isDarkMode ? "#444" : "#ddd",
+              color: isDarkMode ? "#fff" : "#000",
+            }}
+            onClick={() => setIsDarkMode((prev) => !prev)}
+          >
+            {isDarkMode ? "Light Mode" : "Dark Mode"}
+          </button>
+        </div>
+      </div>
     </header>
   );
 }
